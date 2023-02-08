@@ -5,6 +5,7 @@ import { KeyboardControls, OrbitControls } from "@react-three/drei";
 import Experience from "./Experience";
 import { Perf } from "r3f-perf";
 import Providers from "./Providers";
+import Rifle from "./Rifle";
 
 // Hooks
 import { useMemo } from "react";
@@ -34,6 +35,7 @@ function App() {
   return (
     <Providers>
       <VRButton />
+      <Rifle />
       <Canvas shadows dpr={[1, 1.5]}>
         <Perf position="top-left" />
         {/* <Leva hidden={true} /> */}

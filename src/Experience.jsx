@@ -117,7 +117,7 @@ function Experience() {
       <Hands />
 
       <Suspense>
-        <Physics>
+        <Physics gravity={[0, -9.8, 0]}>
           {showDebug && <Debug />}
           {/* <Grid /> */}
           <Player />

@@ -11,7 +11,7 @@ import { useRapier } from "@react-three/rapier";
 // Components
 import { RigidBody, CapsuleCollider } from "@react-three/rapier";
 
-const speed = 10;
+const speed = 20;
 const gamepadThreshold = 0.05;
 const playerSize = 0.5;
 const rotationSensitivity = 0.05;
@@ -116,6 +116,7 @@ function Player() {
   return (
     <>
       <RigidBody
+        name="player"
         type="dynamic"
         ref={playerRef}
         position={[0, 0, 0]}
